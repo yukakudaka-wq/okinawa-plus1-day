@@ -16,12 +16,12 @@
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{margin:0;background:#fff;-webkit-text-size-adjust:100%}
-.gh-header{max-width:1080px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
-.gh-header img{display:block;height:44px;width:auto}
+.gh-header{max-width:1080px;margin:0 auto;padding:8px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.gh-header img{display:block;height:84px;width:auto;max-width:60vw;object-fit:contain}
 .gh-header a.gh-cta{font-family:"Zen Maru Gothic","Hiragino Maru Gothic ProN","Meiryo",sans-serif;font-weight:900;font-size:15px;text-decoration:none;background:#1b3a8c;color:#fff;border-radius:999px;padding:9px 18px;box-shadow:0 3px 0 #ffdf3d;white-space:nowrap}
 .gh-main{padding:0 12px}
 .gh-footer{text-align:center;font-family:"BIZ UDPGothic","Meiryo",sans-serif;font-size:12px;color:#55627a;padding:28px 16px 36px}
-@media (max-width:720px){.gh-header a.gh-cta{display:none}.gh-header img{height:38px}}
+@media (max-width:720px){.gh-header a.gh-cta{display:none}.gh-header img{height:60px}}
 </style>
 </head>
 <body>
@@ -316,7 +316,7 @@ body{margin:0;background:#fff;-webkit-text-size-adjust:100%}
         <a class="p1d-btn p1d-btn-sub" href="assets/flyer.jpg" target="_blank" rel="noopener">チラシを見る</a>
       </div>
     </div>
-    <figure class="p1d-hero-art"><img src="assets/photos/top.jpg" alt="晴れた海沿いの公園で、大人たちが笑顔でウォーキングを楽しむイメージ写真" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='assets/photos/top.png'}else{this.parentNode.remove()}"></figure>
+    <figure class="p1d-hero-art"><img src="assets/top.png" data-alts="assets/photos/top.jpg|assets/photos/top.png|assets/top.jpg|assets/photos/top.jpeg|assets/photos/top.JPG|assets/photos/top.PNG|assets/photos/top.png.png|assets/photos/top.jpg.jpg|top.png|top.jpg" alt="晴れた海沿いの公園で、大人たちが笑顔でウォーキングを楽しむイメージ写真" onerror="var a=(this.dataset.alts||'').split('|').filter(Boolean);if(a.length){this.dataset.alts=a.slice(1).join('|');this.src=a[0]}else{this.parentNode.remove()}"></figure>
   </section>
 
   <nav class="p1d-nav" aria-label="ページ内メニュー">
